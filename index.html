@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de gastos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="conteiner">
+        <div>
+            <img src="logo.png" alt="some text" width=300 height=200>
+        </div>
+        <br>
+        <div class="borda">
+            <H2>Receitas</H2>
+            <div class="form-container">
+                <label>Salario:</label>
+                <input class="input" type="number" onchange="calculaTotalReceitas()" placeholder="R$ 0,00" id="salario">
+                <label>Extra:</label>
+                <input class="input" type="number" id="extra" onchange="calculaTotalReceitas()" placeholder="R$ 0,00">
+                <label>Total:</label>
+                <input class="input" type="number" id="total" disabled placeholder="R$ 0,00">
+            </div>
+        </div>
+        <div class="conteudo">
+                <div class="moradia">
+                    <img src="moradia.png" alt="some text">
+                    <label>Moradia</label>
+                </div>
+                <div>
+                    <label> Gasto Total:</label>
+                    <input class="input" type="number" onchange="calculaGastos()" placeholder="R$ 0,00" id="moradia">
+                </div>
+
+                <div class="alimentacao">
+                    <img src="alimentacao.png" alt="some text">
+                    <label>Alimentação:</label>
+                </div>
+                <div>
+                    <label> Gasto Total:</label>
+                    <input class="input" type="number" onchange="calculaGastos()" placeholder="R$ 0,00" id="alimentacao">
+                </div>
+                <div class="saude">
+                    <img src="saude.png" alt="some text">
+                    <label>Saúde</label>
+                </div>
+                <div>
+                    <label> Gasto Total:</label>
+                    <input class="input" type="number" onchange="calculaGastos()" placeholder="R$ 0,00" id="saude">
+                </div>
+                <div class="transporte">
+                    <img src="transporte.png" alt="some text">
+                    <label>Transporte</label>
+                </div>
+                <div>
+                    <label> Gasto Total:</label>
+                    <input class="input" type="number" onchange="calculaGastos()" placeholder="R$ 0,00" id="transporte">
+                </div>
+                <div class="educacao">
+                    <img src="educacao.png" alt="some text">
+                    <label>Educação</label>
+                </div>
+                <div>
+                    <label> Gasto Total:</label>
+                    <input class="input" type="number" onchange="calculaGastos()" placeholder="R$ 0,00" id="educacao">
+                </div>
+
+        </div>
+        <div class="resumo">
+            <div class="header">
+                <img src="resumo.png" alt="some text">
+                <label> Resumo</label>
+            </div>
+            <div class="body-resumo">
+                <h3 class="titulo-moradia">Moradia</h3>
+                <div>
+                    <label id="porcentagem-moradia">0%</label>
+                    <label id="valor-moradia">R$0,00</label>
+                </div>
+                <h3 class="titulo-alimentacao">Alimentação</h3>
+                <div>
+                    <label id="porcentagem-alimentacao">0%</label>
+                    <label id="valor-alimentacao">R$0,00</label>
+                </div>
+                <h3 class="titulo-saude">Saude</h3>
+                <div>
+                    <label id="porcentagem-saude">0%</label>
+                    <label id="valor-saude">R$0,00</label>
+                </div>
+                <h3 class="titulo-transporte">Transporte</h3>
+                <div>
+                    <label id="porcentagem-transporte">0%</label>
+                    <label id="valor-transporte">R$0,00</label>
+                </div>
+                <h3 class="titulo-educacao">Educação</h3>
+                <div>
+                    <label id="porcentagem-educacao">0%</label>
+                    <label id="valor-educacao">R$0,00</label>
+                </div>
+            </div>
+            <div class="footer-resumo verde">
+                <h1>Saldo</h1>
+                <label id="saldo">R$0,00</label>
+                <p id="msg"></p>
+            </div>
+            <input type="hidden" id="valorTotalDespesas" value="0">
+        </div>
+    </div>
+</body>
+
+</html>

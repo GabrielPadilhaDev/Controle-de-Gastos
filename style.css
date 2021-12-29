@@ -1,0 +1,187 @@
+img{
+    width: 90%;
+    margin-left:5%;
+    margin-top: 0.05%;
+    border: 1px solid black;
+    margin-bottom: 0.05%; 
+}
+
+
+.form-container label{
+    display: inline-block;
+    width: 50px; 
+    text-align: right;
+    padding-right: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+}
+
+.input{
+    border-radius: 40px;
+    min-width:210px;
+    font-size:20px;
+    text-align:center;
+    justify-content: space-evenly;
+    
+}
+.borda{
+   
+    border: solid;
+    border-top: 2px;
+    padding: 15px;
+    width: 88%;
+    text-align:center;
+    height: 20vh;
+    border: 1px solid rgb(223, 221, 221);
+    justify-content: space-around;
+    margin-bottom: 15px;
+    margin-top: 0.5px;
+    margin-left: 5%;
+   
+   
+}
+label{
+    font-size:20px;
+}
+H3{
+    text-align:center;
+}
+
+
+.conteudo{
+    display: inline-block;
+    width: 40%;
+    border: 1px solid rgb(223, 221, 221);
+    margin-right: 5%;
+    margin-left: 5%;
+    
+
+}
+.conteudo>div{
+    border: 1px solid rgb(235, 235, 235);
+    width: auto;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    height: 70px;
+}
+.conteudo>div:nth-child(2n-1){
+    justify-content: start;
+
+}
+
+.conteudo img{
+    height: 60px;
+    width: auto;
+    display:inline-block;
+
+}
+
+.moradia{
+    background-color:rgb(197, 33, 33);
+    color:white;
+}
+
+.albackground-color{
+    background-color: (33, 197, 181);   
+    color:white;
+}
+
+.saude{
+    background-color:rgb(233, 193, 120);
+    color:white;
+}
+
+.transporte{
+    background-color:rgb(225, 118, 225);
+    color:white;
+}
+.educacao{
+    background-color:rgb(9, 9, 138);
+    color:white;
+}
+
+.resumo{
+    display: inline-block;
+    width: 39.8%;
+    margin-left: 5%;
+    vertical-align: top;
+    border: 1px solid rgb(223, 221, 221);
+    
+
+}
+.body-resumo{
+    padding: 0px 10px;
+}
+
+.body-resumo>h3{
+    text-align: left;
+
+}
+.body-resumo>div{
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer-resumo{
+    color:white;
+    text-align: center;
+    
+}
+
+.vermelho{
+    background-color: rgb(197, 33, 33);
+}
+
+.verde{
+    background-color: rgb(11, 155, 47);
+}
+
+.footer-resumo>p{
+    white-space: pre-wrap;
+}
+
+.header{
+    background-color: rgb(201, 199, 199);
+    height: 80px;
+    display:flex;
+    align-items:center;
+    justify-content: start;
+    padding: 20px;
+
+}
+.header>img{
+    height: 80px;
+    width: auto;
+}
+
+.titulo-moradia{
+    color:rgb(197, 33, 33);
+}
+
+
+.titulo-alimentacao{
+    color:rgb(33, 197, 181);
+   
+}
+
+.titulo-saude{
+    color:rgb(225, 118, 225);
+    
+}
+
+.titulo-transporte{
+    color:rgb(225, 118, 225);
+    
+}
+.titulo-educacao{
+    color:midnightblue;
+   
+}
+
+.conteiner{
+    margin: 80px;
+}
